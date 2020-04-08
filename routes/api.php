@@ -13,6 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('convert/{integer}', 'ConversionController@convert')->where('integer', '[0-9]+');
+Route::get('often_converted', 'OftenConvertedController@list');
+Route::get('recently_converted', 'RecentlyConvertedController@list');

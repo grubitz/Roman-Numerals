@@ -9,7 +9,7 @@ use Tests\TestCase;
 
 class RomanNumeralTest extends TestCase
 {
-    public function testIntergerToRomanNumerals()
+    public function testIntegerToRomanNumerals()
     {
         $class = new \App\IntegerConversion();
 
